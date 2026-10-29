@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathleen Mata Juntilla - UI/UX & Graphic Designer | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">Kathleen <span>Juntilla</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
+        🌙 Light Mode
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+      <div>
+        <div class="status-badge">
+          <span class="status-dot"></span> Open for OJT Opportunities
+        </div>
+        <h1 class="hero-title">Kathleen Mata <span>Juntilla</span></h1>
+        <p class="hero-subtitle">
+          BSIT Student at Cebu Technological University - Danao Campus specializing in 
+          <strong>UI/UX Design</strong>, <strong>Graphic Design</strong>, and <strong>Frontend Web & Mobile Interfaces</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills & Certifications -->
+    <section id="skills">
+      <h2 class="section-title">Skills & Certifications</h2>
+      <p class="section-subtitle">My core technical strengths and design capabilities.</p>
+      
+      <div class="skills-grid">
+        <div class="card">
+          <h3 class="card-title">UI/UX & Graphic Design</h3>
+          <ul class="skill-list">
+            <li class="tag">Figma</li>
+            <li class="tag">Wireframing</li>
+            <li class="tag">Component Systems</li>
+            <li class="tag">High-Fidelity Mockups</li>
+            <li class="tag">Layout & Typography</li>
+            <li class="tag">Visual Assets</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Frontend & Mobile</h3>
+          <ul class="skill-list">
+            <li class="tag">React Native</li>
+            <li class="tag">Expo Router</li>
+            <li class="tag">SQLite</li>
+            <li class="tag">HTML5 / CSS3</li>
+            <li class="tag">Tailwind CSS</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Hardware & Certifications</h3>
+          <ul class="skill-list">
+            <li class="tag">Computer Systems Servicing (CSS) NC II</li>
+            <li class="tag">TESDA Certified (2025–2026)</li>
+            <li class="tag">PC Assembly & Troubleshooting</li>
+            <li class="tag">Git / GitHub</li>
+            <li class="tag">VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects">
+      <div class="projects-header">
+        <div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle" style="margin-bottom:0;">Showcasing UI wireframes, mobile layouts, and web interfaces.</p>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+          <button class="filter-btn" onclick="filterProjects('design', this)">UI/UX</button>
+          <button class="filter-btn" onclick="filterProjects('mobile', this)">Mobile</button>
+          <button class="filter-btn" onclick="filterProjects('web', this)">Web</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- UI/UX Design Project -->
+        <div class="card project-card" data-category="design">
+          <div class="project-body">
+            <h3 class="project-title">Web & Mobile Application Prototypes</h3>
+            <p class="project-desc">
+              Designed interactive high-fidelity wireframes, responsive layouts, and modern visual design assets in Figma.
+            </p>
+            <div class="skill-list">
+              <span class="tag">Figma</span>
+              <span class="tag">Wireframing</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Project -->
+        <div class="card project-card" data-category="mobile">
+          <div class="project-body">
+            <h3 class="project-title">React Native & Expo Mobile App</h3>
+            <p class="project-desc">
+              Built cross-platform app interfaces for iOS/Android using React Native and Expo Router, with local SQLite data handling.
+            </p>
+            <div class="skill-list">
+              <span class="tag">React Native</span>
+              <span class="tag">Expo Router</span>
+              <span class="tag">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Project -->
+        <div class="card project-card" data-category="web">
+          <div class="project-body">
+            <h3 class="project-title">Responsive Web Interface</h3>
+            <p class="project-desc">
+              Created modern, mobile-friendly web page layouts using HTML, CSS, JavaScript, and Tailwind CSS.
+            </p>
+            <div class="skill-list">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">Reach out for OJT inquiries, collaborations, or questions.</p>
+
+      <div class="contact-container">
+        <div class="card">
+          <h3 class="card-title">Contact Information</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+            Feel free to send a message or email me directly for OJT opportunities.
+          </p>
+          <p style="margin-bottom: 0.75rem;"><strong>Location:</strong> Cabungahan, Danao City, Cebu, Philippines</p>
+          <p style="margin-bottom: 0.75rem;"><strong>Email:</strong> juntillakathleen18@gmail.com</p>
+          <p><strong>Phone:</strong> +63 999 673 5389</p>
+        </div>
+
+        <form class="card" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" class="form-control" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" placeholder="Hello Kathleen..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Kathleen Mata Juntilla. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
